@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reframe - TikTok Quality Loss Bypass</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FFmpeg.wasm v0.12 CDN -->
+  <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js"></script>
+  <script src="https://unpkg.com/@ffmpeg/util@0.12.1/dist/umd/util.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Video Metadata Stripper</h2>
+    <p>ভিডিওর কোয়ালিটি না কমিয়ে মেটাডাটা প্রসেস করুন</p>
+    
+    <input type="file" id="video-input" accept="video/mp4,video/mkv">
+    <button id="process-btn" onclick="processVideo()">প্রসেস ও ডাউনলোড করুন</button>
+    
+    <p id="status"></p>
+    <div id="download-area"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
